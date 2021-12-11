@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="class_lib_try">
+      <HintPath>..\class_lib_try\bin\Debug\class_lib_try.dll</HintPath>
+    </Reference>
+    <Reference Include="lib_on_c++">
+      <HintPath>..\Debug\lib_on_c++.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
